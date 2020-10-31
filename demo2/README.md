@@ -28,7 +28,7 @@ curl 'http://localhost:9200/_search?q=<QUERY>'
 
 To look for example for a customer in Vietnam named Greg:
 ```
-curl 'http://localhost:9200/_search?q=Vietnam%20Greg' | jq
+curl 'http://localhost:9200/_search?q=Vietnam%20AND%20Greg' | jq
 ```
 (Also added a pipe though jq to format the JSON to make it readable)
 
